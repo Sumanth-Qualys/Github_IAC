@@ -8,6 +8,11 @@ on:
       - main 
   schedule:
     - cron:  '*/5 * * * *'
+
+permissions:
+  security-events: write
+  contents: read
+
 jobs:
     Qualys_iac_scan:
         runs-on: ubuntu-latest
